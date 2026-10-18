@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zian Alaika Farchan - Portofolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+     
+</head>
+<body>
+    <script src="script.js" defer></script>
+
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-terminal"></i> Ziannnn<span>.dev</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link active">About Me</a></li>
+            <li><a href="#skills" class="nav-link">What I can Do</a></li>
+            <li><a href="#projects" class="nav-link">Achivement</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-btn" id="themeToggle" aria-label="Toggle Theme">
+                <i class="fa-regular fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="badge-freshman">
+                    <i class="fa-solid fa-code"></i> Freshman Student 2026 • Pendidikan Teknologi Informasi
+                </div>
+                <h1 class="hero-title">Halo, Saya Zian 👋<br>Yang Pengen <span>1 Langkah Di Depan</span>.</h1>
+                <p class="hero-subtitle">Mahasiswa baru yang santai tapi fokus. Tertarik pada pengembangan web, editing multimedia, dan eksplorasi teknologi baru di lingkungan kampus.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        Lihat Karya <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Ajak Diskusi
+                    </a>
+                </div>
+
+                <!-- Daily Motivation / Tips Generator -->
+                <div class="sparkle-box">
+                    <div class="sparkle-content">
+                        <i class="fa-solid fa-quote-left" style="color: var(--accent-slate);"></i>
+                        <span id="quoteText">"Konsistensi kecil setiap hari lebih berharga daripada maraton belajar di akhir semester."</span>
+                    </div>
+                    <button class="sparkle-btn" id="quoteBtn">
+                        <i class="fa-solid fa-bolt"></i> Tips Survival Ala Zian
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-card">
+                    <!-- Male Aesthetic Photo Placeholder -->
+                    <img src="foto forml.jpeg" alt="Foto Profil Rian" class="avatar-img" onerror="this.src='https://placehold.co/400x500/4B6584/FFFFFF?text=Aesthetic+Male+Avatar'">
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fa-solid fa-laptop-code"></i> Tech Enthusiast
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fa-solid fa-gamepad"></i> Chill & Focus
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-info" style="background-color: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Ringkasan Info</span>
+                <h2 class="section-title">Sekilas Tentang Saya</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Jurusan & Kampus</h3>
+                    <p>S1 Pendidikan Teknologi Informasi — Universitas Negeri Surabaya (Angkatan 2026).</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Target Kuliah</h3>
+                    <p>Aktif di kampus, IPK stabil, dan memperbanyak relasi dan portofolio open-source.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <h3>Minat & Hobi</h3>
+                    <p>Web Development, Video Editing, Lofi Music, & bermain futsal.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Prinsip Kerja</h3>
+                    <p>"Tetap tenang, berpikir logis, dan selesaikan masalah satu per satu."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What i can do</span>
+                <h2 class="section-title">Skills & Tools</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Hard Skills -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="skill-title">Programming & Web</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5, CSS3, JavaScript</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-progress="30%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python (Dasar & Logika)</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-progress="60%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git & GitHub Workflow</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-progress="30%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Tools & Multimedia -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon" style="background-color: var(--accent-slate-light); color: var(--accent-slate);"><i class="fa-solid fa-sliders"></i></div>
+                        <h3 class="skill-title">Tools & Software</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code & Terminal</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-progress="60%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CapCut / Kinemaster (Video Edit)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-progress="75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Notion / Productivity Tools</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-progress="90%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon" style="background-color: var(--accent-sand-light); color: var(--text-primary);"><i class="fa-solid fa-user-check"></i></div>
+                        <h3 class="skill-title">Soft Skills</h3>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 15px;">Kualifikasi diri pendukung kerja tim dan organisasi:</p>
+                    <div class="soft-skills-badges">
+                        <span class="soft-badge"><i class="fa-solid fa-check" style="color: var(--accent-slate);"></i> Problem Solving</span>
+                        <span class="soft-badge"><i class="fa-solid fa-check" style="color: var(--accent-slate);"></i> Team Work</span>
+                        <span class="soft-badge"><i class="fa-solid fa-check" style="color: var(--accent-slate);"></i> Public Speaking</span>
+                        <span class="soft-badge"><i class="fa-solid fa-check" style="color: var(--accent-slate);"></i> Adaptasi Cepat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="background-color: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Achivement</span>
+                <h2 class="section-title">Portofolio & Project</h2>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project Item 1 -->
+                <div class="project-card" onclick="openModal('Saya  mengikuti lomba SMA AWARD pada tahun 2025', '', 'Web Dev')">
+                    <div class="project-img-wrapper">
+                        <span class="project-category">Web Dev</span>
+                        <img src="Solovokal.jpeg" alt="Project 1" class="project-img" onerror="this.src='https://placehold.co/600x400/4B6584/FFFFFF?text=Web+Development'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Peserta Aktif SMA AWARD</h3>
+                        <p class="project-desc">Saya  mengikuti lomba SMA AWARD pada tahun 2025.</p>
+                        <div class="project-footer">
+                            <span>lihat</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="project-card" onclick="openModal('Disini saya mengikuti lomba MTQ tingkat kabupaten', '', 'Video Edit')">
+                    <div class="project-img-wrapper">
+                        <span class="project-category">Video Edit</span>
+                        <img src="mtq.jpeg" alt="Project 2" class="project-img" onerror="this.src='https://placehold.co/600x400/6B7C59/FFFFFF?text=Video+Editing'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Lomba MTQ</h3>
+                        <p class="project-desc">Disini saya mengikuti lomba MTQ tingkat kabupaten.</p>
+                        <div class="project-footer">
+                            <span>Lihat</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 -->
+                <div class="project-card" onclick="openModal('Disini saya lolos SNBP 2026 di Universitas Negeri Surabaya', '', 'Desain Grafis')">
+                    <div class="project-img-wrapper">
+                        <span class="project-category">Desain Grafis</span>
+                        <img src="SNBP.jpeg" alt="Project 3" class="project-img" onerror="this.src='https://placehold.co/600x400/1B2A4A/FFFFFF?text=Graphic+Design'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Lolos SNBP</h3>
+                        <p class="project-desc">Disini saya lolos SNBP 2026 di Universitas Negeri Surabaya</p>
+                        <div class="project-footer">
+                            <span>Lihat Desain</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mari Terhubung</span>
+                <h2 class="section-title">Kontak & Media Sosial</h2>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Ajak Ngeteh / Diskusi ☕</h3>
+                    <p class="contact-info-text">Menerima semua info, Dari Sidoarjo time sampai Surabaya time</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <span>zeinpaint123@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Sidoarjo / Surabaya, Indonesia</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/zian-alaika-farchan-a7a754432?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/frchnziann_?mdxt=MTRpZjY3cGc4dDF1" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/user/31fgmtzqelcjtqhim3fz2x3gukke?si=c200cdb089fc4a3b" class="social-btn" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nama Kamu</label>
+                        <input type="text" id="name" class="form-input" placeholder="Tuliskan nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="email@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Pesan / Topik Diskusi</label>
+                        <textarea id="message" class="form-textarea" placeholder="Tuliskan pesan kamu..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fa-regular fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                    <div class="form-feedback" id="formFeedback">
+                        Pesan kamu telah terkirim! Sampai jumpa di kampus ✨
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Zian — Built with Focus & Muted Aesthetic.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Window Karya -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Project Image">
+                <h3 class="modal-title" id="modalTitle">Project Title</h3>
+                <p class="modal-text" id="modalText">Project Description...</p>
+                <button class="btn btn-primary" onclick="closeModal()" style="font-size: 0.85rem; padding: 8px 20px;">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Focus / Lofi Ambient Player -->
+    <div class="audio-widget" id="audioWidget">
+        <div class="music-disc">
+            <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div class="audio-info">
+            <span class="audio-title">Focus & Study Beats</span>
+            <span class="audio-sub">Muted Ambient</span>
+        </div>
+        <button class="play-btn" id="playBtn" aria-label="Play/Pause Audio">
+            <i class="fa-solid fa-play" id="playIcon"></i>
+        </button>
+    </div>
+</body>
+</html>
